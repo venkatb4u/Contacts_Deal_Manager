@@ -1,4 +1,4 @@
- #CONTACTS_DEALS_MANAGER
+#CONTACTS_DEALS_MANAGER
 
 A perfect MVC structured/scaffolded HTML5 app, that enables the user to Create/Edit/Delete Contacts & Deals
 
