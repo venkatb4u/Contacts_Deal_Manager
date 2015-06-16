@@ -1,0 +1,40 @@
+/* ------ App Options ------- */
+#appOptions {
+	background-color: #f4f4f5;
+	background-image: linear-gradient(to top, #e9e9ea, #f4f4f5 5px);
+	border-bottom: 1px solid #d2d4d5;
+}
+#appOptions ul {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+#appOptions li {
+	display: inline-block;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	width: auto;
+	min-width: 100px;
+}
+#appOptions li:last-child {
+	border-left: none;
+}
+#appOptions li:hover {
+	background: rgba(210, 180, 140, 0.25);
+}
+#appOptions label {
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  height: 50px;
+  line-height: 50px;
+  min-width: 100px;
+  display: inline-block;
+}
+#appOptions input {
+	left: -999px; /* hiding it from the vision with purpose */
+	position: absolute;
+}
+#appOptions input:checked + label {
+	background: lightblue;
+}

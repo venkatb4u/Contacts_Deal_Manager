@@ -1,0 +1,86 @@
+/* ------ Contacts ------- */
+
+#tabContacts .contact {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 20%;
+   margin: 10px auto;
+  -webkit-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  -ms-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+}
+#tabContacts .contact.add {
+  min-height: 140px;
+  border: 3px dotted #ccc;
+  box-shadow: inset -2px -3px 60px -25px rgba(0,0,0,0.64);
+}
+#tabContacts .contact > header, #tabContacts .contact > div {
+	padding: 0 5px;
+}
+
+#tabContacts header {
+	border-bottom: 1px solid #ccc;
+	overflow: auto;
+  padding: 0 5px;
+}
+#tabContacts header input.name {
+  width: 100%;
+}
+#tabContacts header > div {
+	float: right;
+  text-align: center;
+   height: 37px;
+  line-height: 37px;
+}
+#tabContacts .contact form > div {
+	text-align: left;
+  padding: 5px 0 0 4px;
+}
+#tabContacts .contact h3 {
+	float: left;
+  max-width: 90%;
+  width: 80%;
+  margin: 5px 0 0 5px;
+  text-align: left;
+}
+
+#tabContacts .contact dl {
+	margin: 10px 0;
+}
+#tabContacts .contact dt {
+	font-weight: 700;
+	font-size: 14px;
+}
+#tabContacts .contact dd {
+	margin-left: 5px;
+	font-size: 12px;
+	word-wrap: break-word;
+}
+
+/* ---- EDIT Mode ---- */
+
+#tabContacts .contact li {
+	margin: 3px 0;
+}
+#tabContacts .contact header .icon {
+  vertical-align: text-bottom;
+}
+  
+#tabContacts li.mandatory .remove, #tabContacts li:not(.mandatory) .plus {
+	visibility: hidden;
+}
+
+#tabContacts .contact input {
+  font-size: 13px;
+  height: 15px;
+  line-height: 15px;
+  padding: 3px 2px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+#tabContacts .contact li input {
+  width: 75%;
+}
+#tabContacts .contact li .icon {
+	vertical-align: middle;
+}

@@ -1,0 +1,24 @@
+<form action="" method="post" onsubmit="return false">	
+	<header>
+		<h3><input class="oldPrice" title="Old Price" type="number" value="{{props.oldprice}}" required placeholder="Old"/> -- <input class="newPrice" title="New Price" type="number" value="{{props.newprice}}" required placeholder="New"/></h3>
+		<div>
+			<input class="icon save" title="Save" type="submit"></input>
+			<span class="icon delete" title="Delete"></span>
+		</div>
+	</header>
+	<div>
+		<label for="status">Status: </label>
+		<select id="status">
+			<option {{#is props.status '===' 'new'}}selected{{/is}} value="new">New</option>
+			<option {{#is props.status '===' 'open'}}selected{{/is}} value="open">Open</option>
+			<option {{#is props.status '===' 'closed'}}selected{{/is}} value="closed">Closed</option>
+		</select>
+		<ul>
+			{{#each props.contacts}}
+				<li {{#is @index '===' 0}}class="mandatory"{{/is}}><span class="icon plus" title="Add another contact"></span><input type="text" {{#is @index '===' 0}}required{{/is}} class="contact" value="{{this}}" placeholder="Contact{{#is @index '!==' 0}}@index{{/is}}"/><span class="icon remove" title="Remove this label"></span></li>
+			{{else}}
+				<li class="mandatory"><span class="icon plus" title="Add another Contact"></span><input title="Contact" type="text" required class="contact" value="" placeholder="Contact"/><span class="icon remove" title="Remove this label"></span></li>
+			{{/each}}
+		</ul>
+	</div>
+</form>

@@ -1,0 +1,21 @@
+<form action="" method="post" onsubmit="return false">
+	<header>
+		<h3 class="name">{{props.name}}</h3>
+		<div>
+			<span class="icon edit" title="Edit"></span>
+			<span class="icon delete" title="Delete"></span>
+		</div>  				
+	</header>
+	<div>
+		<dl>
+			  	<dt>Mobile:</dt>
+			  	{{#each props.mobile}}
+			  		<dd class="mobile">{{this}}</dd>
+			  	{{/each}}
+			  	<dt>Email:</dt>
+			  	{{#each props.email}}
+			  		<dd class="email">{{this}}</dd>
+			  	{{/each}}
+		</dl>
+	</div>
+</form>

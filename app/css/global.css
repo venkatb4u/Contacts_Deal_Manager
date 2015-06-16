@@ -1,0 +1,94 @@
+
+
+/*---------- Global Css  ------------*/
+html, body { /* Footer sticky css */
+	margin:0;
+	padding:0;
+	height:100%;
+}
+body{
+	background: #fff;
+	overflow-x: hidden;
+   	text-align: center;	
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+/*---------- Custom Classes ----------*/
+.noselect {
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	 user-select:none;
+}
+.clearfix {
+	clear: both;
+}
+.hide {
+    display: none !important;
+}
+
+/* ------ Icons  ------- */
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 16px;   
+    margin-left: 5px;
+    cursor: pointer;
+}
+.edit {
+    background: url(../images/editwhite.png) no-repeat;
+    background-size: 60% 90%;
+}
+.delete {
+    background: url(../images/delete.png) no-repeat;
+}
+.open {
+    background: url(../images/open-64.png) no-repeat;
+}
+.new {
+    background: url(../images/new-64.png) no-repeat;
+}
+.closed {
+    background: url(../images/closed-64.png) no-repeat;
+}
+.save {
+    background: url(../images/save-16.png) no-repeat;
+}
+.contact.add {
+    background: url(../images/addcontact-64.png) center no-repeat;
+}
+.deal.add {
+    background: url(../images/adddeal-64.png) center no-repeat;
+}
+.remove {
+    background: url(../images/remove-16.png) no-repeat;
+}
+.plus {
+    background: url(../images/plus-16.png) no-repeat;
+    background-size: 70%;
+    vertical-align: sub;    
+}
+
+/* ------ Widgets ------- */
+#tabBody {
+    padding: 10px;
+}
+#tabBody > div {
+    display: block;
+}
+#tabBody  article {
+    width: 90%;
+}

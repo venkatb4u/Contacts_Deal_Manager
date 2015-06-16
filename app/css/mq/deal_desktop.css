@@ -1,0 +1,24 @@
+/* ------ Deals ------- */
+
+#tabDeals .deal {
+  border-radius: 5px;
+  border: 1px solid;
+  flex: 20%;
+   margin: 10px;
+  max-width: 280px;
+  -webkit-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  -ms-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+}
+#tabDeals .deal h3 {
+	width: auto;
+}
+#tabDeals .deal.editMode .oldPrice, #tabDeals .deal.editMode .newPrice {
+	width: 60px;
+}
+#tabDeals .deal.editMode #status {
+	width: 30%;
+}
+#tabDeals .deal li input {
+  width: 200px;
+}

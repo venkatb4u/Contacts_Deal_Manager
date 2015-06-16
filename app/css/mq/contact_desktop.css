@@ -1,0 +1,24 @@
+/* ------ Contacts ------- */
+
+#tabContacts .contact {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 20%;
+   margin: 10px;
+  max-width: 280px;
+  -webkit-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  -ms-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+}
+#tabContacts .contact h3 {
+	float: left;
+	max-width: 90%;
+	width: 70%;
+	margin: 5px 0 0 5px;
+}
+#tabContacts header input.name {
+  width: 190px;
+}
+#tabContacts .contact li input {
+  width: 200px;
+}

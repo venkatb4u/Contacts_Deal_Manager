@@ -1,0 +1,20 @@
+<form action="" method="post" onsubmit="return false">
+	<header>
+		<h3><span class="oldPrice">&#x20B9;.{{props.oldprice}}</span> -- <span class="newPrice">&#x20B9;.{{props.newprice}}</span></h3>
+		<div>
+			<span class="icon edit" title="Edit"></span>
+			<span class="icon delete" title="Delete"></span>
+		</div>
+	</header>
+	<div>
+		<dl>
+			<dd class="icon status {{#is props.status '===' 'new'}}new{{/is}}{{#is props.status '===' 'open'}}open{{/is}}{{#is props.status '===' 'closed'}}closed{{/is}}" title="{{#is props.status '===' 'new'}}New deal! Right time to grab this up{{/is}}{{#is props.status '===' 'open'}}Hurry up! Deal is Open{{/is}}{{#is props.status '===' 'closed'}}Oops! Deal closed :({{/is}}"></dd>
+			<dt>Contact:</dt>
+			<dd class="dealContact">
+				{{#each props.contacts}}
+			  		<span class="contact">{{this}}</span>
+			  	{{/each}}
+			</dd>
+		</dl>
+	</div>
+</form>

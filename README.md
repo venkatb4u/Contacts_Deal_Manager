@@ -11,4 +11,4 @@ The app is completely modularised & implemented using the following framework/li
  * RWD Breakpoint: Mobiles, Tabs (till 768px) & Desktops
 
 #DEMO
-https://crm-backbone-venkatb4u.c9.io/index.html
+https://contacts-deal-manager-venkatb4u.c9.io/index.html

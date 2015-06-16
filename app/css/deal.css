@@ -1,0 +1,148 @@
+/* ------ Deals ------- */
+
+#tabDeals .deal {
+  border-radius: 5px;
+  border: 1px solid;
+  flex: 20%;
+  margin: 10px auto;
+  -webkit-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  -ms-box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+  box-shadow: inset 0px 40px 90px -35px rgba(0,0,0,0.64);
+}
+#tabDeals .deal.add {
+  min-height: 170px;
+  border: 3px dotted #ccc;
+  box-shadow: inset -2px -3px 60px -25px rgba(0,0,0,0.64);
+}
+#tabDeals .deal form > header, #tabDeals .deal form > div {
+	padding: 0 5px;
+}
+#tabDeals .deal form > div {
+	margin: 10px 0;
+	text-align: left;
+}
+
+#tabDeals header {
+	border-bottom: 1px solid #ccc;
+	overflow: auto;
+	padding: 0 5px;
+}
+#tabDeals header input.name {
+  width: 190px;
+}
+#tabDeals header > div {
+	float: right;
+  text-align: center;
+   height: 37px;
+  line-height: 37px;
+}
+#tabDeals .deal h3 {
+	float: left;
+	max-width: 90%;
+	width: 70%;
+	margin: 5px 0 0 5px;
+	text-align: left;	
+}
+
+#tabDeals .deal dl {
+	margin: 10px 0;
+	text-align: center;
+}
+#tabDeals .deal dt {
+	font-weight: 700;
+	font-size: 14px;
+	margin: 5px;
+	text-align: left;
+}
+#tabDeals .deal dd {
+	margin-left: 5px;
+	font-size: 12px;
+	word-wrap: break-word;
+}
+#tabDeals .deal .oldPrice {
+	text-decoration: line-through;
+	font-weight: 300;
+}
+#tabDeals .deal form {
+	width: 100%;
+}
+#tabDeals .deal:not(.editMode) form > div .icon {
+	width: 64px;
+	height: 64px;	
+	cursor: default;
+}
+
+#tabDeals .deal > span {
+	display: inline-block;
+	width: auto;
+	border:1px solid #ccc;
+	border-radius: 7px;
+	padding: 5px 15px 5px 3px;
+	margin-left: 5px;
+	background: url(../images/closesmall-16.gif) no-repeat right;
+	background-size: 20%;
+	cursor: pointer;
+}
+#tabDeals .deal > span:hover {
+	padding: 5px 20px 5px 5px;
+	background: lightblue url(../images/closeblack-16.png) no-repeat right;
+	background-size: 25%;
+}
+
+#tabDeals .dealContact {
+	display: flex;
+}
+#tabDeals .dealContact > span {
+	display: inline-block;
+	width: auto;
+	border:1px solid #ccc;
+	border-radius: 7px;
+	padding: 5px 15px 5px 3px;
+	margin-left: 5px;
+	background: url(../images/closesmall-16.gif) no-repeat right;
+	background-size: 30%;
+	cursor: pointer;
+}
+#tabDeals .dealContact > span:hover {
+	padding: 5px 20px 5px 5px;
+	background: lightblue url(../images/closeblack-16.png) no-repeat right;
+	background-size: 40%;
+	cursor: default;
+}
+/* ---- EDIT Mode ---- */
+
+#tabDeals .deal ul, #tabDeals .deal li {
+	margin: 5px 0;
+}
+#tabDeals .deal ul {
+	margin: 20px 0 0 0;
+}
+#tabDeals .deal header .icon {
+  vertical-align: text-bottom;
+}
+  
+#tabDeals li.mandatory .remove, #tabDeals li:not(.mandatory) .plus {
+	visibility: hidden;
+}
+
+#tabDeals .deal input {
+  font-size: 13px;
+  height: 15px;
+  line-height: 15px;
+  padding: 3px 2px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+#tabDeals .deal li input {
+  width: 60%;
+}
+#tabDeals .deal li .icon {
+	vertical-align: middle;
+}
+#tabDeals .deal.editMode .oldPrice, #tabDeals .deal.editMode .newPrice {
+	width: 40%;
+}
+#tabDeals .deal.editMode #status {
+	font-size: 13px;
+	width: 20%;
+}

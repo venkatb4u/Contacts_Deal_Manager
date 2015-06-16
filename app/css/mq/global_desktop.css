@@ -1,0 +1,8 @@
+/* ------ Widgets ------- */
+#tabBody {
+	padding: 10px;
+}
+#tabBody > div {
+	display: flex;
+	flex-flow: row wrap;
+}
