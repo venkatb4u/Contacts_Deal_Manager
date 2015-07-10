@@ -1,0 +1,11 @@
+{
+  "name": "Contacts_Deals_Manager",
+  "version": "0.0.0",
+  "description": "A CRM app that manages Contacts and Deals -- using Backbone.js",
+  "repository": "",
+  "start": ["server.js"],
+  "author": "Venkat",
+  "dependencies": {
+    "express": "*"
+  }
+}
